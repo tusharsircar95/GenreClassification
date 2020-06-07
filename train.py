@@ -32,8 +32,8 @@ if __name__ == "__main__":
         song_data = None
         train_split = val_split = None
 
-    train_dataset = dataset.MusicDataset(train_split,mode='train',preloaded=args.preloaded)
-    val_dataset = dataset.MusicDataset(val_split,mode='val',preloaded=args.preloaded)
+    train_dataset = dataset.MusicDataset(train_split,mode='train',preloaded=args.preloaded == 1)
+    val_dataset = dataset.MusicDataset(val_split,mode='val',preloaded=args.preloaded == 1)
     
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print(device)

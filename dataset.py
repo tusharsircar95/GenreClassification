@@ -3,7 +3,7 @@ import torch
 import glob
 import random
 import torchvision.transforms as transforms
-# from dataset_utils import load_song, convert_signal_to_spec, split_signal
+from dataset_utils import load_song, convert_signal_to_spec, split_signal
 
 class MusicDataset(torch.utils.data.Dataset):
   def __init__(self,song_data,mode,preloaded=False):

@@ -1,4 +1,5 @@
 import librosa
+import numpy as np
 
 def split_signal(signal,chunk_ratio=0.3, offset_ratio=0.5):
     splits = []
