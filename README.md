@@ -53,6 +53,14 @@ Classifier is trained with softmax-cross-entropy, center-softmax, cos-face and s
    
 ## Results
 
+Accuracy:
+<ul>
+   <li> Softmax Loss: 76.39%</li>
+   <li> Center-Softmax Loss: 85.39%</li>
+   <li> Cosine Loss: 79.79%</li>
+</ul>
+
+Embeddings:
 <table align='center'>
   <tr align='center'>
     <td width='100px'> Softmax </td>
